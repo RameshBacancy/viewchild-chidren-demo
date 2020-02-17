@@ -1,0 +1,51 @@
+<br /><br />
+
+<div>
+  <p #pRef> Hello P element</p>
+</div>
+
+<div *ngIf="showMe">
+  <div #dynamicDiv>dynamic</div>
+</div>
+
+<button (click)="onClick()">showMe</button> <br /><br />
+
+<input type="text" #title>
+
+<br /><br />
+<hr>
+<h3>@ViewChild using Component</h3>
+Number Example:
+<button type="button" (click)="increase()">Increase</button>
+<button type="button" (click)="decrease()">Decrease</button>
+<br /><br />
+<app-child></app-child>
+
+<br /> <br />
+<hr>
+
+<h3>@ViewChild using Directive</h3>
+Color Example:
+<p cpColor>Change my Color </p>
+<div>
+  Change Color:
+  <input type="radio" name="rad" (click)="changeColor('green')"> Green
+  <input type="radio" name="rad" (click)="changeColor('cyan')"> Cyan
+  <input type="radio" name="rad" (click)="changeColor('blue')"> Blue
+</div>
+
+
+<br /> <br />
+<hr>
+
+<h3>@ViewChildren using Component</h3>
+<div>
+  <app-alert></app-alert>
+  <app-alert type="danger"></app-alert>
+  <app-alert type="info"></app-alert>
+
+  <br/>
+  <div #div>#div is a template variable
+    <p> P text </p>
+  </div>
+</div>
